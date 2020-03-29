@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>just do it - pd</title><link href="https://99d.in/" rel="alternate"></link><link href="https://99d.in/feeds/pd.atom.xml" rel="self"></link><id>https://99d.in/</id><updated>2017-12-20T19:00:00+08:00</updated><entry><title>Codepush React native iOS</title><link href="https://99d.in/bnote/codePush.html" rel="alternate"></link><published>2017-12-20T19:00:00+08:00</published><updated>2017-12-20T19:00:00+08:00</updated><author><name>pd</name></author><id>tag:99d.in,2017-12-20:/bnote/codePush.html</id><summary type="html">记录下Codepush常用的命令行。</summary><content type="html">&lt;p&gt;记录下Codepush常用的命令行。省得每次去翻官方文档。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>just do it - pd</title><link href="https://99d.in/" rel="alternate"></link><link href="https://99d.in/feeds/pd.atom.xml" rel="self"></link><id>https://99d.in/</id><updated>2020-03-29T21:01:00+08:00</updated><entry><title>做我的猫你过的好不好</title><link href="https://99d.in/dlife/cat.html" rel="alternate"></link><published>2020-03-29T21:01:00+08:00</published><updated>2020-03-29T21:01:00+08:00</updated><author><name>pd</name></author><id>tag:99d.in,2020-03-29:/dlife/cat.html</id><summary type="html">2018花了5000元学费买了一只猫</summary><content type="html">&lt;blockquote&gt;
+&lt;p&gt;2018花了5000元学费买了一只猫&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="a3542999f583f692a7b7224ff658c91b"&gt;喵名&lt;/h2&gt;
+&lt;p&gt;因有一张和饼一样大的脸，故起名叫大饼。&lt;/p&gt;
+&lt;h2 id="c2d82f9a6415c2fe824392c92ae0aef2"&gt;喵生&lt;/h2&gt;
+&lt;p&gt;贴几张照片记录下猫生。&lt;/p&gt;
+&lt;p&gt;还不到一岁的时候,抬起头的样子真可爱。
+&lt;img alt="" src="../static/small.png"/&gt;&lt;/p&gt;
+&lt;p&gt;在光前村的时候最喜欢的睡觉姿势。
+&lt;img alt="" src="../static/sleep.png"/&gt;&lt;/p&gt;
+&lt;p&gt;不管是谁只要撸你，你就会顺势躺下,这个时候已经看不出来你是一个女孩子了。
+&lt;img alt="" src="../static/fat.png"/&gt;&lt;/p&gt;</content><category term="Cat"></category></entry><entry><title>Codepush React native iOS</title><link href="https://99d.in/bnote/codePush.html" rel="alternate"></link><published>2017-12-20T19:00:00+08:00</published><updated>2017-12-20T19:00:00+08:00</updated><author><name>pd</name></author><id>tag:99d.in,2017-12-20:/bnote/codePush.html</id><summary type="html">记录下Codepush常用的命令行。</summary><content type="html">&lt;p&gt;记录下Codepush常用的命令行。省得每次去翻官方文档。&lt;/p&gt;
 &lt;h2 id="c04495b8ddd6ab4ca28152219ada6dae"&gt;登录appcenter&lt;/h2&gt;
 &lt;p&gt;appcenter login&lt;/p&gt;
 &lt;h2 id="ac863f346e618f9a959b5c95d5d28941"&gt;App&lt;/h2&gt;
