@@ -104,14 +104,14 @@
 </blockquote>
 <h1 id="ddc7d28b7b108cdca9ee7832f7314422">变量</h1>
 <p>let 定义一个常量 var 定义一个变量  可以不声明变量类型 变量名可用Unicode字符</p>
-<div class="highlight"><pre><span></span>let f = 70
-let f1: Float = 70
-let 🐶 = "加班狗"
-var s: String = "string"
-var red, green, bule: Double
-let `int` = "abc"
-print("Swift \(🐶)")
-print(f, f1, separator: "====", terminator: "\n")
+<div class="highlight"><pre><span></span><span class="n">let</span> <span class="n">f</span> <span class="o">=</span> <span class="mi">70</span>
+<span class="n">let</span> <span class="n">f1</span><span class="p">:</span> <span class="kt">Float</span> <span class="o">=</span> <span class="mi">70</span>
+<span class="n">let</span> <span class="err">🐶</span> <span class="o">=</span> <span class="s2">"加班狗"</span>
+<span class="n">var</span> <span class="n">s</span><span class="p">:</span> <span class="n">String</span> <span class="o">=</span> <span class="s2">"string"</span>
+<span class="n">var</span> <span class="n">red</span><span class="p">,</span> <span class="n">green</span><span class="p">,</span> <span class="n">bule</span><span class="p">:</span> <span class="kt">Double</span>
+<span class="n">let</span> <span class="ss">`int`</span> <span class="o">=</span> <span class="s2">"abc"</span>
+<span class="nf">print</span><span class="p">(</span><span class="s2">"Swift \(🐶)"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">f1</span><span class="p">,</span> <span class="k">separator</span><span class="p">:</span> <span class="s2">"===="</span><span class="p">,</span> <span class="n">terminator</span><span class="p">:</span> <span class="s2">"\n"</span><span class="p">)</span>
 </pre></div>
 <blockquote>
 <p>Notes</p>
@@ -136,23 +136,23 @@ print(f, f1, separator: "====", terminator: "\n")
 <p><code>true</code> or <code>false</code>终于不是 <code>YES or NO</code>了</p>
 <h2 id="cda9f200088a3396902af2d4b5efb290">元组</h2>
 <p>元组把多个值组合在一起,每一个值可以是不同的数据类型.</p>
-<div class="highlight"><pre><span></span>let http404Error = (404,"Not Found")
-类型为(Int,String)的元组
+<div class="highlight"><pre><span></span><span class="err">let http404Error = (404,"Not Found")</span>
+<span class="err">类型为(Int,String)的元组</span>
 </pre></div>
-<div class="highlight"><pre><span></span>let (statuCode, error) = http404Error
-print(statuCode,error)
-将元组内容分解成单独的的常量和变量
+<div class="highlight"><pre><span></span><span class="n">let</span> <span class="p">(</span><span class="n">statuCode</span><span class="p">,</span> <span class="n">error</span><span class="p">)</span> <span class="o">=</span> <span class="n">http404Error</span>
+<span class="n">print</span><span class="p">(</span><span class="n">statuCode</span><span class="p">,</span><span class="n">error</span><span class="p">)</span>
+<span class="err">将元组内容分解成单独的的常量和变量</span>
 
-let (statuCode,_) = http404Error
-print(statuCode,error)
-分解的时候忽略的部分用_标记
+<span class="n">let</span> <span class="p">(</span><span class="n">statuCode</span><span class="p">,</span><span class="n">_</span><span class="p">)</span> <span class="o">=</span> <span class="n">http404Error</span>
+<span class="n">print</span><span class="p">(</span><span class="n">statuCode</span><span class="p">,</span><span class="n">error</span><span class="p">)</span>
+<span class="err">分解的时候忽略的部分用</span><span class="n">_</span><span class="err">标记</span>
 
-print(http404Error.0, http404Error.1)
-可以通过下标来访问
+<span class="n">print</span><span class="p">(</span><span class="n">http404Error</span><span class="p">.</span><span class="mi">0</span><span class="p">,</span> <span class="n">http404Error</span><span class="p">.</span><span class="mi">1</span><span class="p">)</span>
+<span class="err">可以通过下标来访问</span>
 
-let http200 = (code:200, des:true)
-print(http200.code, http200.des)
-定义元组的时候给元素命名,可以通过名字来取值
+<span class="n">let</span> <span class="n">http200</span> <span class="o">=</span> <span class="p">(</span><span class="n">code</span><span class="p">:</span><span class="mi">200</span><span class="p">,</span> <span class="n">des</span><span class="p">:</span><span class="k">true</span><span class="p">)</span>
+<span class="n">print</span><span class="p">(</span><span class="n">http200</span><span class="p">.</span><span class="n">code</span><span class="p">,</span> <span class="n">http200</span><span class="p">.</span><span class="n">des</span><span class="p">)</span>
+<span class="err">定义元组的时候给元素命名</span><span class="p">,</span><span class="err">可以通过名字来取值</span>
 </pre></div>
 <h2 id="4fa4f39154d3fc1624099c34182adbfb">可选类型</h2>
 <p><code>optionals</code>来处理可能缺失的情况,可选类型来表示:</p>
@@ -164,24 +164,24 @@ print(http200.code, http200.des)
 <p><code>Int?</code> or <code>optional Int</code></p>
 <h3 id="852438d026c018c4307b916406f98c62">nil</h3>
 <p>可以给可选变量赋值为nil来表示它没有值。nil不能用于非可选的常量和变量,如果要处理缺失情况,应该声明成对应的可选类型.</p>
-<div class="highlight"><pre><span></span>OC中nil指向不存在的对象的指针。Swift中nil不是指针它是一个确定的值,用来表示缺失,任何类型的可选状态都可以设置为nil。
+<div class="highlight"><pre><span></span><span class="err">OC中nil指向不存在的对象的指针。Swift中nil不是指针它是一个确定的值,用来表示缺失,任何类型的可选状态都可以设置为nil。</span>
 </pre></div>
 <h3 id="52281bbb55b775e6238b4faea2763f78">可选值的强制解析</h3>
 <p>当确定可选类型确实包含值之后,可以在可选的名字后面加一个感叹号来取值</p>
-<div class="highlight"><pre><span></span>if convertNumber != nil{
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">convertNumber</span> <span class="o">!=</span> <span class="n">nil</span><span class="err">{</span>
 
-    print("(converNumber!)")
+    <span class="n">print</span><span class="p">(</span><span class="ss">"(converNumber!)"</span><span class="p">)</span>
 
-}
+<span class="err">}</span>
 </pre></div>
 <p>使用<code>!</code>获取一个不存在可选值会导致运行时的错误。使用<code>!</code>来强制解析之前,一定要确定可选包含一个非<code>nil</code>的值。</p>
 <h3 id="362a5bcaae88747d270aedbe592dd7aa">可选绑定</h3>
 <p>使用可选绑定来判断可选类型是否包含值,如果包含值就把值赋给一个临时常量或变量。</p>
-<div class="highlight"><pre><span></span>if let actualNumber = Int(possbileNumber){
-    print(actualNumber)
-}else{
-    print("not integer")
-}
+<div class="highlight"><pre><span></span><span class="err">if let actualNumber = Int(possbileNumber){</span>
+<span class="err">    print(actualNumber)</span>
+<span class="err">}else{</span>
+<span class="err">    print("not integer")</span>
+<span class="err">}</span>
 </pre></div>
 <h3 id="871961bb53c7d430a1be996622d506e5">隐式解析可选类型</h3>
 <p>隐式解析可选其实就是一个普通的可选类型(可自动解析的可选类型)，但是可以被当做非可选类型来用，不需要每次都使用解析来获取值。
@@ -194,11 +194,11 @@ print(http200.code, http200.des)
 <p>很多地方和大部分语言是相同的。只记下不同的地方。</p>
 <h2 id="dac6cd239b9a9c4cd71fb3d5e2d3fb49">赋值运算符</h2>
 <p>Swift的赋值运算符不返回任何值。</p>
-<div class="highlight"><pre><span></span>if(x = 1){
+<div class="highlight"><pre><span></span><span class="k">if</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span><span class="err">{</span>
 
-    //此句错误。再也不用担心 ==写成=了。
+    <span class="o">//</span><span class="err">此句错误。再也不用担心</span> <span class="o">==</span><span class="err">写成</span><span class="o">=</span><span class="err">了。</span>
 
-}
+<span class="err">}</span>
 </pre></div>
 <h2 id="20805b4c0d2cc79d9e7ff7d09649a390">算术运算符</h2>
 <p>Swift默认情况下不允许出现溢出情况。但可以使用Swift的溢出运算符来实现溢出运算。如(a &amp;+ b)
@@ -213,11 +213,11 @@ print(http200.code, http200.des)
 <h2 id="0b9e4c50c1cc94af08df81e22c2f0fd9">区间运算符</h2>
 <h3 id="737996fad0e733e457a8fe8f0c72004d">闭区间运算符</h3>
 <p><code>a...b</code> 定义一个从a到b(包含a和b)的所有值区间,b必须大于等于a.</p>
-<div class="highlight"><pre><span></span>for index in 1...5{
+<div class="highlight"><pre><span></span><span class="k">for</span> <span class="k">index</span> <span class="k">in</span> <span class="mi">1</span><span class="p">...</span><span class="mi">5</span><span class="err">{</span>
 
-    print(index)
+    <span class="n">print</span><span class="p">(</span><span class="k">index</span><span class="p">)</span>
 
-}
+<span class="err">}</span>
 </pre></div>
 <h3 id="3df0c47cdc0607e68b466869840f15c4">半开区间运算符</h3>
 <p><code>a..&lt;b</code> 定义一个从a到b但不包括b的区间,称为半区间是因为包含第一个值不包含最后一个值.
@@ -225,25 +225,25 @@ print(http200.code, http200.des)
 <h1 id="cc4dd1da7e1a754534215f02fb9ba85d">字符串</h1>
 <h2 id="a6b363bb757dc13cece66cf23648b8cf">拼接</h2>
 <p>直接使用加号</p>
-<div class="highlight"><pre><span></span>print("今天星期四"+"明天元旦放假啊")
+<div class="highlight"><pre><span></span><span class="err">print("今天星期四"+"明天元旦放假啊")</span>
 </pre></div>
 <h2 id="706a31e5f14203120576352d0cf8bf97">字符串插值</h2>
 <p>换句话说就是格式化字符串。个人理解是使用<code>\()</code>来占位替换.</p>
-<div class="highlight"><pre><span></span>let tucao = "车牌又要到3W了"
-print("\(tucao)。要不要离开这个鬼地方")
+<div class="highlight"><pre><span></span><span class="err">let tucao = "车牌又要到3W了"</span>
+<span class="err">print("\(tucao)。要不要离开这个鬼地方")</span>
 </pre></div>
 <blockquote>
 <p>插值字符串写在括号中的表达式不能包含非转义反斜线<code>\</code>,并且不能包含回车或换行。</p>
 </blockquote>
 <h2 id="c6009d4f6a2226b5376028d5f296bae5">字符数量</h2>
-<div class="highlight"><pre><span></span>"数量".characters.count
+<div class="highlight"><pre><span></span><span class="err">"数量".characters.count</span>
 </pre></div>
 <p>在Swift 中，使用可拓展的字符群集作为Character值来连接或改变字符串时，并不一定会更改字符串的字符数量。</p>
 <p>NSString的length和characters.count返回的长度可能不一样。这个得小心了。感觉很复杂。#-_-</p>
-<div class="highlight"><pre><span></span>var word = "cafe"
-print("the number of characters in \(word) is \(word.characters.count)")
-word += "\u{301}"
-print("the number of characters in \(word) is \(word.characters.count)")
+<div class="highlight"><pre><span></span><span class="err">var word = "cafe"</span>
+<span class="err">print("the number of characters in \(word) is \(word.characters.count)")</span>
+<span class="err">word += "\u{301}"</span>
+<span class="err">print("the number of characters in \(word) is \(word.characters.count)")</span>
 </pre></div>
 <h2 id="83f6fff6219e3d2e7f7e857b7d611c24">访问和修改字符串</h2>
 <h3 id="b271e427962758c71e342a2c06df493a">索引</h3>
@@ -254,29 +254,29 @@ print("the number of characters in \(word) is \(word.characters.count)")
 <code>index.predecessor()</code>得到index的前一个索引。<br/>
 <code>index.successor()</code>得到index后一个索引。<br/>
 <code>startIndex.advancedBy(3)</code>startIndex后面的第三个索引。  </p>
-<div class="highlight"><pre><span></span>print(word[word.startIndex],
-    word[word.endIndex.predecessor()],
-    word[word.startIndex.successor()],
-    word[word.startIndex.advancedBy(3)])
+<div class="highlight"><pre><span></span><span class="err">print(word[word.startIndex],</span>
+<span class="err">    word[word.endIndex.predecessor()],</span>
+<span class="err">    word[word.startIndex.successor()],</span>
+<span class="err">    word[word.startIndex.advancedBy(3)])</span>
 </pre></div>
 <p>字符串characters属性的indices属性创建一个包含全部索引Range,用来在一个字符串中访问单个字符</p>
-<div class="highlight"><pre><span></span>for index in word.characters.indices{
-    print(word[index])
-}
+<div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="k">index</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">word</span><span class="p">.</span><span class="n">characters</span><span class="p">.</span><span class="n">indices</span><span class="err">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">print</span><span class="p">(</span><span class="n">word</span><span class="o">[</span><span class="n">index</span><span class="o">]</span><span class="p">)</span><span class="w"></span>
+<span class="err">}</span><span class="w"></span>
 </pre></div>
 <h3 id="4f72854e51ae690d3d28f8138e0b6fc7">插入和删除</h3>
-<div class="highlight"><pre><span></span>var s = "插入"
-s.insert("啊", atIndex: s.endIndex)//插入单个字符
-s.insertContentsOf("字符串".characters, at: s.endIndex)//插入字符串
-s.removeAtIndex(s.startIndex)//移除单个
-let range = s.endIndex.advancedBy(-2)..&lt;s.endIndex//移除子串
-s.removeRange(range)//清空字符串
-print(s)
+<div class="highlight"><pre><span></span><span class="err">var s = "插入"</span>
+<span class="err">s.insert("啊", atIndex: s.endIndex)//插入单个字符</span>
+<span class="err">s.insertContentsOf("字符串".characters, at: s.endIndex)//插入字符串</span>
+<span class="err">s.removeAtIndex(s.startIndex)//移除单个</span>
+<span class="err">let range = s.endIndex.advancedBy(-2)..&lt;s.endIndex//移除子串</span>
+<span class="err">s.removeRange(range)//清空字符串</span>
+<span class="err">print(s)</span>
 </pre></div>
 <h3 id="469e0eee17a884bf97e500fdb0f02182">比较字符串</h3>
 <p>== 前缀/后缀相等</p>
-<div class="highlight"><pre><span></span>var a_ = "字符串1",b = "字符串2"
-print(a_ == b, a_.hasPrefix("字符串"),b.hasSuffix("2"))
+<div class="highlight"><pre><span></span><span class="err">var a_ = "字符串1",b = "字符串2"</span>
+<span class="err">print(a_ == b, a_.hasPrefix("字符串"),b.hasSuffix("2"))</span>
 </pre></div>
                 </div>
                 <div id="content-comments">
@@ -301,6 +301,8 @@ print(a_ == b, a_.hasPrefix("字符串"),b.hasSuffix("2"))
                 <div id="niu2-sidebar-meta" class="niu2-sidebar">
                     <div class="niu2-sidebar-label"><i class="icon-calendar"></i>发布时间:</div>
                     <div class="niu2-sidebar-value">2015-12-25 10:20</div>
+                    <div class="niu2-sidebar-label"><i class="icon-pencil" style="font-size: 1.05em;"></i>最后修改:</div>
+                    <div class="niu2-sidebar-value">2016-12-17 15:34</div>
                     <div class="niu2-sidebar-label"><i class="icon-pencil"></i>分类:</div>
                     <div class="niu2-sidebar-value"><a href="https://99d.in/bnote/index.html">笔记</a></div>
                     <div class="niu2-sidebar-label"><i class="icon-tag"></i>标签:</div>

@@ -121,20 +121,20 @@
 对报错的<code>framework</code>执行以下命令:</p>
 <p><code>otool -arch armv7 –l Xxxxx.framework/Xxxxx</code></p>
 <p>我们可以看到以下内容:</p>
-<div class="highlight"><pre><span></span>Load command 14
-cmd LC_LINKER_OPTION
-cmdsize 32
-count 2
-string #1 -framework
-string #2 OpenGLES
-Load command 15
+<div class="highlight"><pre><span></span><span class="k">Load</span> <span class="n">command</span> <span class="mi">14</span>
+<span class="n">cmd</span> <span class="n">LC_LINKER_OPTION</span>
+<span class="n">cmdsize</span> <span class="mi">32</span>
+<span class="k">count</span> <span class="mi">2</span>
+<span class="n">string</span> <span class="o">#</span><span class="mi">1</span> <span class="o">-</span><span class="n">framework</span>
+<span class="n">string</span> <span class="o">#</span><span class="mi">2</span> <span class="n">OpenGLES</span>
+<span class="k">Load</span> <span class="n">command</span> <span class="mi">15</span>
 
-cmd LC_LINKER_OPTION
-cmdsize 32
-count 2
-string #1 -framework
-string #2 Metal
-Load command 16
+<span class="n">cmd</span> <span class="n">LC_LINKER_OPTION</span>
+<span class="n">cmdsize</span> <span class="mi">32</span>
+<span class="k">count</span> <span class="mi">2</span>
+<span class="n">string</span> <span class="o">#</span><span class="mi">1</span> <span class="o">-</span><span class="n">framework</span>
+<span class="n">string</span> <span class="o">#</span><span class="mi">2</span> <span class="n">Metal</span>
+<span class="k">Load</span> <span class="n">command</span> <span class="mi">16</span>
 </pre></div>
 <p>正如你所看到的,这将导致<code>linker</code>隐式使用<code>Metal</code></p>
 <h4 id="34e74b1c7f4aad91715567cf698912f6">The Solution</h4>
@@ -166,6 +166,8 @@ Load command 16
                 <div id="niu2-sidebar-meta" class="niu2-sidebar">
                     <div class="niu2-sidebar-label"><i class="icon-calendar"></i>发布时间:</div>
                     <div class="niu2-sidebar-value">2015-06-08 09:50</div>
+                    <div class="niu2-sidebar-label"><i class="icon-pencil" style="font-size: 1.05em;"></i>最后修改:</div>
+                    <div class="niu2-sidebar-value">2015-06-08 10:50</div>
                     <div class="niu2-sidebar-label"><i class="icon-code"></i>分类:</div>
                     <div class="niu2-sidebar-value"><a href="https://99d.in/acode/index.html">饭碗</a></div>
                     <div class="niu2-sidebar-label"><i class="icon-tag"></i>标签:</div>

@@ -111,7 +111,7 @@
 <p>像<code>tree</code> 命令一样显示<code>view</code>的层次结构。</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span>[self.view recursiveDescription]
+<div class="highlight"><pre><span></span><span class="err">[self.view recursiveDescription]</span>
 </pre></div>
 <ul>
 <li><code>tableView</code>滚动的时候始终以<code>row</code>的高度为单位。
@@ -177,18 +177,18 @@
 <p><code>Xcode</code> 调试的状态显示<code>indexing....</code>,卡很久</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span>Open your Project Folder.
-Find ProjectName.xcodeproj file.
-Right-Click Copy and Paste to Safe Place.
-Right-Click Show Package Contents.
-Find project.xcworkspace file and delete that file.
-Reopen Your Project and clean and Rebuild.
+<div class="highlight"><pre><span></span><span class="err">Open your Project Folder.</span>
+<span class="err">Find ProjectName.xcodeproj file.</span>
+<span class="err">Right-Click Copy and Paste to Safe Place.</span>
+<span class="err">Right-Click Show Package Contents.</span>
+<span class="err">Find project.xcworkspace file and delete that file.</span>
+<span class="err">Reopen Your Project and clean and Rebuild.</span>
 </pre></div>
 <ul>
 <li>自定义通知(远程和本地)的声音文件可以放入bundle文件夹,注册推送的时候声音文件填写对应的路径即可。</li>
 </ul>
-<div class="highlight"><pre><span></span>let notification = UILocalNotification()
-notification.soundName = "sound.bundle/" + xxx.wav
+<div class="highlight"><pre><span></span><span class="err">let notification = UILocalNotification()</span>
+<span class="err">notification.soundName = "sound.bundle/" + xxx.wav</span>
 </pre></div>
 <ul>
 <li><code>swift</code> <code>print</code>在<code>Xcode</code>-&gt;<code>Devices</code>-&gt; 'xxx的iPhone8' 不会打印日志, <code>NSLog</code>会打印。</li>
@@ -216,6 +216,8 @@ notification.soundName = "sound.bundle/" + xxx.wav
                 <div id="niu2-sidebar-meta" class="niu2-sidebar">
                     <div class="niu2-sidebar-label"><i class="icon-calendar"></i>发布时间:</div>
                     <div class="niu2-sidebar-value">2015-08-29 14:58</div>
+                    <div class="niu2-sidebar-label"><i class="icon-pencil" style="font-size: 1.05em;"></i>最后修改:</div>
+                    <div class="niu2-sidebar-value">2017-08-31 16:40</div>
                     <div class="niu2-sidebar-label"><i class="icon-pencil"></i>分类:</div>
                     <div class="niu2-sidebar-value"><a href="https://99d.in/bnote/index.html">笔记</a></div>
                     <div class="niu2-sidebar-label"><i class="icon-tag"></i>标签:</div>

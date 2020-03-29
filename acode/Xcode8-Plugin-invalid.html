@@ -117,7 +117,7 @@
 <ul>
 <li>用创建的<code>XcodeSigner</code>证书给<code>Xcode</code>重新签名</li>
 </ul>
-<div class="highlight"><pre><span></span>sudo codesign -f -s XcodeSigner /Applications/Xcode.app 
+<div class="highlight"><pre><span></span><span class="err">sudo codesign -f -s XcodeSigner /Applications/Xcode.app </span>
 </pre></div>
 <ul>
 <li>git clone https://github.com/XVimProject/XVim/</li>
@@ -125,7 +125,7 @@
 <li>make   </li>
 <li>最后运行下面的命令</li>
 </ul>
-<div class="highlight"><pre><span></span>find ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins -name Info.plist -maxdepth 3 | xargs -I{} defaults write {} DVTPlugInCompatibilityUUIDs -array-add `defaults read /Applications/Xcode.app/Contents/Info.plist DVTPlugInCompatibilityUUID`
+<div class="highlight"><pre><span></span><span class="err">find ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins -name Info.plist -maxdepth 3 | xargs -I{} defaults write {} DVTPlugInCompatibilityUUIDs -array-add `defaults read /Applications/Xcode.app/Contents/Info.plist DVTPlugInCompatibilityUUID`</span>
 </pre></div>
 <ul>
 <li>重启Xcode即可</li>
@@ -181,6 +181,8 @@
                 <div id="niu2-sidebar-meta" class="niu2-sidebar">
                     <div class="niu2-sidebar-label"><i class="icon-calendar"></i>发布时间:</div>
                     <div class="niu2-sidebar-value">2016-09-19 20:33</div>
+                    <div class="niu2-sidebar-label"><i class="icon-pencil" style="font-size: 1.05em;"></i>最后修改:</div>
+                    <div class="niu2-sidebar-value">2016-09-20 19:33</div>
                     <div class="niu2-sidebar-label"><i class="icon-code"></i>分类:</div>
                     <div class="niu2-sidebar-value"><a href="https://99d.in/acode/index.html">饭碗</a></div>
                     <div class="niu2-sidebar-label"><i class="icon-tag"></i>标签:</div>

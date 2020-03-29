@@ -104,16 +104,16 @@
 </blockquote>
 <h2 id="e6cefb85dc60e5c9c0d7d804f85f6572">需求</h2>
 <p>最开始设计图是这样的,居中显示一段文字,颜色xx,字体大小xx。</p>
-<div class="highlight"><pre><span></span>let label: UILabel = UILabel()
-label.text = "bababal..."
-label.font = UIFont.systemFontsize(1.0)
-label.textalign = .center
-label.snp.makeConstraints{ (make) in
-    make.left.top.right.equal(0)
-}
+<div class="highlight"><pre><span></span><span class="err">let label: UILabel = UILabel()</span>
+<span class="err">label.text = "bababal..."</span>
+<span class="err">label.font = UIFont.systemFontsize(1.0)</span>
+<span class="err">label.textalign = .center</span>
+<span class="err">label.snp.makeConstraints{ (make) in</span>
+<span class="err">    make.left.top.right.equal(0)</span>
+<span class="err">}</span>
 </pre></div>
 <p>几行代码搞定。后来需求说文字可能有点多要换行。于是再加一行代码</p>
-<div class="highlight"><pre><span></span>label.numberoflines = 0
+<div class="highlight"><pre><span></span><span class="err">label.numberoflines = 0</span>
 </pre></div>
 <p>后来又说文字可能更多，更多的文字显示 ...
 再后来又说...的文字要显示出来，超出固定高度的要滚动。</p>
@@ -127,10 +127,10 @@ label.snp.makeConstraints{ (make) in
 需要添加各种判断和限制才能达到想要的效果。
 于是便考虑用<code>UIScorllView</code> + <code>UILabel</code>来实现。</p>
 <h2 id="de842a6c80128bf1587c7cd451914e7a">解决方案</h2>
-<div class="highlight"><pre><span></span>└── View
-    └── scrollView
-        └── contentView
-            └── label
+<div class="highlight"><pre><span></span><span class="err">└── View</span>
+<span class="err">    └── scrollView</span>
+<span class="err">        └── contentView</span>
+<span class="err">            └── label</span>
 </pre></div>
 <ol>
 <li>scrollView  设置上下左右约束</li>
@@ -162,6 +162,8 @@ label.snp.makeConstraints{ (make) in
                 <div id="niu2-sidebar-meta" class="niu2-sidebar">
                     <div class="niu2-sidebar-label"><i class="icon-calendar"></i>发布时间:</div>
                     <div class="niu2-sidebar-value">2017-08-10 09:43</div>
+                    <div class="niu2-sidebar-label"><i class="icon-pencil" style="font-size: 1.05em;"></i>最后修改:</div>
+                    <div class="niu2-sidebar-value">2018-08-19 15:15</div>
                     <div class="niu2-sidebar-label"><i class="icon-code"></i>分类:</div>
                     <div class="niu2-sidebar-value"><a href="https://99d.in/acode/index.html">饭碗</a></div>
                     <div class="niu2-sidebar-label"><i class="icon-tag"></i>标签:</div>
