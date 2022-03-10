@@ -98,10 +98,10 @@ h3 {
 }
 
 .post {
-    padding-bottom: 0.5em;
+    padding-bottom: 0.1em;
 }
 .post-title {
-    font-size: 2em;
+    font-size: 1.6em;
     color: #222;
     margin-bottom: 0.2em;
 }
@@ -112,7 +112,7 @@ h3 {
 }
 .post-description {
     color: #444;
-    line-height: 1.8em;
+    line-height: 1.5em;
 }
 
 .post-description a {
