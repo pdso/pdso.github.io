@@ -18,15 +18,4 @@ count 2
 string #1 -framework
 string #2 Metal
 Load command 16
-</code></pre><p>正如你所看到的,这将导致<code>linker</code>隐式使用<code>Metal</code></p><h1>The Solution</h1><p>在苹果没解决这个问题之前。可以通过以下两种方法来避免编译错误:</p><p>1&gt;. 直接用Xcode5来生成<code>lib</code>和<code>framework</code></p><p>2&gt;. Xcode6 <code>Build Setting</code>--&gt;<code>Link Frameworks Automatically</code>设置为NO,设置这个之后,Xcode 可能会报更多的错误,因为现在不会自动<code>link</code>框架了,根据报错添加对应的<code>framework</code>即可.</p><h1>From</h1><p><a href="https://www.appsee.com/blog/dev/xcode-new-link-frameworks-automatically-fix-framework-not-found-metal-for-architecture-armv7">framework not found Metal for architecture armv7</a></p></div></div><div id="gitalk-container"></div>  <script type="text/javascript">
-     var gitalk = new Gitalk({
-       clientID: 'b95d503a9717272f665d',
-       clientSecret: 'a881d3da92d2a2bd0ca6d17e2465935444a32b5d',
-       repo: 'pdso.github.io',
-       owner: 'pdso',
-       admin: ['pdso'],
-       id: location.pathname,
-       distractionFreeMode: true
-     })
-     gitalk.render('gitalk-container')
- </script></div><div class="footer pure-u-1"><div class="pure-u-1">© 2015-2022 pd🤩</div><div class="pure-u-1">Generated using <a href="https://github.com/johnsundell/publish">Publish</a></div></div></div></body></html>
+</code></pre><p>正如你所看到的,这将导致<code>linker</code>隐式使用<code>Metal</code></p><h1>The Solution</h1><p>在苹果没解决这个问题之前。可以通过以下两种方法来避免编译错误:</p><p>1&gt;. 直接用Xcode5来生成<code>lib</code>和<code>framework</code></p><p>2&gt;. Xcode6 <code>Build Setting</code>--&gt;<code>Link Frameworks Automatically</code>设置为NO,设置这个之后,Xcode 可能会报更多的错误,因为现在不会自动<code>link</code>框架了,根据报错添加对应的<code>framework</code>即可.</p><h1>From</h1><p><a href="https://www.appsee.com/blog/dev/xcode-new-link-frameworks-automatically-fix-framework-not-found-metal-for-architecture-armv7">framework not found Metal for architecture armv7</a></p></div></div></div><div class="footer pure-u-1"><div class="pure-u-1">© 2015-2022 pd🤩</div><div class="pure-u-1">Generated using <a href="https://github.com/johnsundell/publish">Publish</a></div></div></div></body></html>

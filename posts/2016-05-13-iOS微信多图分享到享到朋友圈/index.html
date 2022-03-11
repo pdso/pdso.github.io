@@ -12,15 +12,4 @@
  <span class="hljs-keyword">self</span>.hideHUDWithCompletionMessage(<span class="hljs-string">"分享的内容已经复制到粘贴板"</span>, finishedHandler: {
      <span class="hljs-keyword">self</span>.navigationController?.presentViewController(activityView, animated: <span class="hljs-literal">true</span>, completion: <span class="hljs-literal">nil</span>)
  })
-</code></pre><h2>代码说明</h2><ul><li>dataArr是一个储存图片的数组</li><li>使用了<code>SDWebImage</code>来显示图片就没另外写图片下载功能。分享的时候直接取<code>SDWebImageView</code>图片缓存</li><li>试了好多次<code>activityItems</code>里面的元素为<code>UIImage</code>或者<code>NSURL</code>的时候经常失败。只能分享一次，重新打开App后才能继续分享.从本地沙盒读到图片这样成功率最高</li></ul><h2>存在的问题</h2><blockquote><p>没办法添加文字。暂时能通过复制粘贴的方式实现。</p></blockquote><hr><blockquote><p>在<code>Swift</code>出3.0前又重新体验了下。比<code>Objective C</code>写起来要爽。<code>Swift</code>从精通到重新入门.😬😰</p></blockquote></div></div><div id="gitalk-container"></div>  <script type="text/javascript">
-     var gitalk = new Gitalk({
-       clientID: 'b95d503a9717272f665d',
-       clientSecret: 'a881d3da92d2a2bd0ca6d17e2465935444a32b5d',
-       repo: 'pdso.github.io',
-       owner: 'pdso',
-       admin: ['pdso'],
-       id: location.pathname,
-       distractionFreeMode: true
-     })
-     gitalk.render('gitalk-container')
- </script></div><div class="footer pure-u-1"><div class="pure-u-1">© 2015-2022 pd🤩</div><div class="pure-u-1">Generated using <a href="https://github.com/johnsundell/publish">Publish</a></div></div></div></body></html>
+</code></pre><h2>代码说明</h2><ul><li>dataArr是一个储存图片的数组</li><li>使用了<code>SDWebImage</code>来显示图片就没另外写图片下载功能。分享的时候直接取<code>SDWebImageView</code>图片缓存</li><li>试了好多次<code>activityItems</code>里面的元素为<code>UIImage</code>或者<code>NSURL</code>的时候经常失败。只能分享一次，重新打开App后才能继续分享.从本地沙盒读到图片这样成功率最高</li></ul><h2>存在的问题</h2><blockquote><p>没办法添加文字。暂时能通过复制粘贴的方式实现。</p></blockquote><hr><blockquote><p>在<code>Swift</code>出3.0前又重新体验了下。比<code>Objective C</code>写起来要爽。<code>Swift</code>从精通到重新入门.😬😰</p></blockquote></div></div></div><div class="footer pure-u-1"><div class="pure-u-1">© 2015-2022 pd🤩</div><div class="pure-u-1">Generated using <a href="https://github.com/johnsundell/publish">Publish</a></div></div></div></body></html>
