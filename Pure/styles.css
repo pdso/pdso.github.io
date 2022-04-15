@@ -128,6 +128,13 @@ h3 {
     text-decoration: underline;
 }
 
+/*.post-description code {*/
+/*    background: #EDEDEB;*/
+/*    border-radius: 4px;*/
+/*    padding: 3px 8px;*/
+/*    color: #DA615C;*/
+/*}*/
+
 .post-meta {
     color: #999;
     font-size: 90%;
